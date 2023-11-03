@@ -1,37 +1,62 @@
-import Test from "./Test";
+
 import "./app.scss";
-import Contact from "./components/contact/Contact";
-import Cursor from "./components/cursor/Cursor";
-import Hero from "./components/hero/Hero";
-import Navbar from "./components/navbar/Navbar";
-import Parallax from "./components/parallax/Parallax";
-import Portfolio from "./components/portfolio/Portfolio";
-import Services from "./components/services/Services";
+import Hero from "./components/homepage/hero/Hero";
+import Navbar from "./components/homepage/navbar/Navbar";
+import Register from "./components/register/Register";
+import Order from "./components/order/Order";
+import Admin from "./components/admin/Admin";
+import Track from "./components/track/Track";
+import Info from "./components/info/Info";
+import About from "./components/about/About";
+import AboutNavBar from "./components/about/aboutNavbar/AboutNavBar";
+import Project from "./components/project/Project";
+import Frameworks from "./components/frameworks/Frameworks";
+import Credits from "./components/credits/Credits";
+
 
 const App = () => {
   return (
     <div>
-      <Cursor />
+      
       <section id="Homepage">
-        <Navbar />
-        <Hero />
+      <Navbar />
+      <Hero />
       </section>
-      <section id="Services">
-        <Parallax type="services" />
+
+      <section id="About Me">
+      <AboutNavBar />
+      <About />
       </section>
-      <section>
-        <Services />
+
+      <section id="Project Overview">
+      <Project />
       </section>
-      <section id="Portfolio">
-        <Parallax type="portfolio" />
+
+      <section id="Register">
+      <Register />
       </section>
-      <Portfolio />
-      <section id="Contact">
-        <Contact />
+
+      <section id="Order">
+      <Order />
       </section>
-      {/* Framer Motion Crash Course */}
-      {/* <Test/>
-    <Test/> */}
+
+      <section id="Admin">
+      <Admin />
+      </section>
+
+      <section id="Track">
+      <Track />
+      </section>
+
+      <section id="Info">
+      <Info />
+      </section>
+
+      <section id="Frameworks">
+      <Frameworks />
+      <Credits />
+      </section>
+    
     </div>
   );
 };
