@@ -24,8 +24,8 @@ const itemVariants = {
   },
 };
 
-const HomeLinksProject = () => {
-  const items = ["Project Overview"];
+const ProjectLinksAdmin = () => {
+  const items = ["Administer"];
 
   return (
     <motion.div className="links" variants={variants}>
@@ -37,12 +37,12 @@ const HomeLinksProject = () => {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
         >
-          See How My Project Work
+          Administer
         </motion.a>
       ))}
     </motion.div>
   );
 };
 
-export default HomeLinksProject;
+export default ProjectLinksAdmin;
 

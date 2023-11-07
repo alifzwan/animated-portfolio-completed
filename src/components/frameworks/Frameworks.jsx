@@ -25,9 +25,13 @@ const Frameworks = () => {
     { name: "Ganache"      , logo: "/ganache.svg", link: "https://trufflesuite.com/docs/ganache/"},
     { name: "Solidity"     , logo: "/solidity.svg", link: "https://docs.soliditylang.org/en/v0.8.22/"},
     { name: "Ethereum"     , logo: "/ethereum.svg", link: "https://ethereum.org/en/developers/docs/"},
+    { name: "Metamask"     , logo: "/metamask.svg"     , link: "https://metamask.io/"},
     { name: "Remix"        , logo: "/remix.png", link: "https://remix.ethereum.org/"},
     { name: "React.js"     , logo: "/react.svg", link: "https://react.dev/learn/installation"},
+    { name: "Node.js"      , logo: "/nodejs.svg"       , link: "https://www.w3schools.com/nodejs/nodejs_intro.asp"},
+    { name: "Web3.js"      , logo: "/web3js.svg"       , link: "https://web3js.readthedocs.io/en/v1.10.0/"},
     { name: "Vite"         , logo: "/vite.svg", link: "https://vitejs.dev/guide/"},
+    { name: "Sass"         , logo: "/sass.svg"         , link: "https://sass-lang.com/documentation/"},
     { name: "Framer-Motion", logo: "/framer-motion.png", link: "https://www.framer.com/motion/"},
   ];
 

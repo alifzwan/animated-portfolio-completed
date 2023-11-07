@@ -2,21 +2,28 @@
 import "./app.scss";
 import Hero from "./components/homepage/hero/Hero";
 import Navbar from "./components/homepage/navbar/Navbar";
+import AboutNavBar from "./components/about/aboutNavbar/AboutNavBar";
+import About from "./components/about/About";
+// import AboutBotBar from "./components/about/aboutBotbar/AboutBotBar";
+import Project from "./components/project/Project";
+
 import Register from "./components/register/Register";
 import Order from "./components/order/Order";
 import Admin from "./components/admin/Admin";
 import Track from "./components/track/Track";
 import Info from "./components/info/Info";
-import About from "./components/about/About";
-import AboutNavBar from "./components/about/aboutNavbar/AboutNavBar";
-import Project from "./components/project/Project";
+
+
 import Frameworks from "./components/frameworks/Frameworks";
 import Credits from "./components/credits/Credits";
+
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 
 
 const App = () => {
   return (
-    <div>
+    <div className="App">
       
       <section id="Homepage">
       <Navbar />
@@ -26,9 +33,10 @@ const App = () => {
       <section id="About Me">
       <AboutNavBar />
       <About />
+      {/* <AboutBotBar /> */}
       </section>
-
-      <section id="Project Overview">
+      
+      <section id="Project">
       <Project />
       </section>
 
@@ -40,7 +48,7 @@ const App = () => {
       <Order />
       </section>
 
-      <section id="Admin">
+      <section id="Administer">
       <Admin />
       </section>
 
@@ -52,12 +60,41 @@ const App = () => {
       <Info />
       </section>
 
-      <section id="Frameworks">
+      <section id="Framework">
       <Frameworks />
       <Credits />
       </section>
-    
+
+
+
+
+
+
+
+
+
+    {/* <section id="Homepage">
+        <React.Fragment>
+          <Navbar />
+          <Hero />
+          <AboutNavBar />
+          <About />
+          <AboutBotBar />
+          <Frameworks />
+          <Credits />
+        </React.Fragment>
+    </section> */}
+
+      {/* <Routes>
+          <Route exact path="/"         element={<Project />} />
+          <Route exact path="/register" element={<Register /> } />
+          <Route exact path="/order"    element={<Order /> } />
+          <Route exact path="/admin"    element={<Admin /> } />
+          <Route exact path="/track"    element={<Track /> } />
+          <Route exact path="/info"     element={<Info /> } />
+      </Routes> */}
     </div>
+    
   );
 };
 

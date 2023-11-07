@@ -26,6 +26,7 @@ const itemVariants = {
 };
 
 const Register = () => {
+    
     return (
         <div className="reg-main-container">
             <h2 className="reg-section-title">Registration</h2>
