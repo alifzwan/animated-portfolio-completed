@@ -1,99 +1,46 @@
 
 import "./app.scss";
-import Hero from "./components/homepage/hero/Hero";
-import Navbar from "./components/homepage/navbar/Navbar";
-import AboutNavBar from "./components/about/aboutNavbar/AboutNavBar";
-import About from "./components/about/About";
+// import Hero from "./components/pages/home/homepage/hero/Hero";
+// import Navbar from "./components/pages/home/homepage/navbar/Navbar";
+// import AboutNavBar from "./components/pages/home/about/aboutNavbar/AboutNavBar";
+// import About from "./components/pages/home/about/About";
 // import AboutBotBar from "./components/about/aboutBotbar/AboutBotBar";
-import Project from "./components/project/Project";
+// import Frameworks from "./components/pages/home/frameworks/Frameworks";
+// import Credits from "./components/pages/home/credits/Credits";
 
-import Register from "./components/register/Register";
-import Order from "./components/order/Order";
-import Admin from "./components/admin/Admin";
-import Track from "./components/track/Track";
-import Info from "./components/info/Info";
+import Home from "./components/pages/home/Home"
 
 
-import Frameworks from "./components/frameworks/Frameworks";
-import Credits from "./components/credits/Credits";
+import Project from "./components/pages/showcase/project/Project";
+import Register from "./components/pages/showcase/register/Register";
+import Order from "./components/pages/showcase/order/Order";
+import Admin from "./components/pages/showcase/admin/Admin";
+import Track from "./components/pages/showcase/track/Track";
+import Info from "./components/pages/showcase/info/Info";
 
-// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 
 
 const App = () => {
   return (
-    <div className="App">
-      
-      <section id="Homepage">
-      <Navbar />
-      <Hero />
-      </section>
-
-      <section id="About Me">
-      <AboutNavBar />
-      <About />
-      {/* <AboutBotBar /> */}
-      </section>
-      
-      <section id="Project">
-      <Project />
-      </section>
-
-      <section id="Register">
-      <Register />
-      </section>
-
-      <section id="Order">
-      <Order />
-      </section>
-
-      <section id="Administer">
-      <Admin />
-      </section>
-
-      <section id="Track">
-      <Track />
-      </section>
-
-      <section id="Info">
-      <Info />
-      </section>
-
-      <section id="Framework">
-      <Frameworks />
-      <Credits />
-      </section>
-
-
-
-
-
-
-
-
-
-    {/* <section id="Homepage">
-        <React.Fragment>
-          <Navbar />
-          <Hero />
-          <AboutNavBar />
-          <About />
-          <AboutBotBar />
-          <Frameworks />
-          <Credits />
-        </React.Fragment>
-    </section> */}
-
-      {/* <Routes>
-          <Route exact path="/"         element={<Project />} />
-          <Route exact path="/register" element={<Register /> } />
-          <Route exact path="/order"    element={<Order /> } />
-          <Route exact path="/admin"    element={<Admin /> } />
-          <Route exact path="/track"    element={<Track /> } />
-          <Route exact path="/info"     element={<Info /> } />
-      </Routes> */}
-    </div>
+    <>
+    <Router>
+    <Routes>
+        <Route path = '/' exact element={<Home />}/>
+          <Route path = '/project' exact  element={<Project />} />
+          <Route path = '/register' exact  element={<Register />} />
+          <Route path = '/order' exact  element={<Order />} />
+          <Route path = '/admin' exact  element={<Admin />} />
+          <Route path = '/track' exact  element={<Track />} />
+          <Route path = '/info' exact  element={<Info />} />
+        </Routes>
+          
+    </Router>
+    </>
     
   );
 };
