@@ -1,6 +1,7 @@
 import "./hero.scss";
 import { motion } from "framer-motion";
 import HomeLinksAbout from "../homelinks/HomeLinkAbout";
+import HomeLinksProject from "../homelinks/HomeLinkProject";
 
 const textVariants = {
   initial: {
@@ -68,6 +69,14 @@ const Hero = () => {
             whileTap={{ scale: 0.95 }}>
 
             <HomeLinksAbout />
+            </motion.button>
+
+            <motion.button 
+            variants={textVariants}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}>
+
+            <HomeLinksProject />
             </motion.button>
           </motion.div>
 
